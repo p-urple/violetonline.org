@@ -1,4 +1,16 @@
 body {
     background-color: #732eff;
-    color: white;
+    color: #ebebeb;
+}
+
+a:link {
+    color: #ebebeb;
+}
+
+a:hover {
+    color: #ef7a85;
+}
+
+a:visited {
+    color: #2a0052;
 }
