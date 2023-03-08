@@ -1,3 +1,0 @@
-[submodule "misc/cloudflare-ddns-updater"]
-	path = misc/cloudflare-ddns-updater
-	url = https://github.com/K0p1-Git/cloudflare-ddns-updater.git
