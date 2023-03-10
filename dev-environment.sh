@@ -1,9 +1,9 @@
 #!/bin/bash
 
 tmux \
-    new-session  -s "violetonline" -n "git" 'vim misc/nginx.conf'\; \
+    new-session  -s "test" -n "git" 'vim misc/nginx.conf'\; \
     split-window -h \; \
     resize-pane -R 35 \; \
-    new-window -n "servers" 'sudo su ; cd /var/dev/violetonline.org' \; \
-    split-window -h 'sudo su ; cd /var/www/violetonline.org' \; \
+    new-window -n "servers" 'ssh -t matchbox.local "cd /var/dev ; sudo su ; zsh --login"' \; \
+    split-window -h 'ssh -t matchbox.local "cd /var/www ; sudo su ; zsh --login"' \; \
     detach-client
